@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { MovieProvider } from '../../providers/movie/movie';
 
 /**
  * Generated class for the FeedPage page.
@@ -22,15 +23,24 @@ export class FeedPage {
     time_comment: "15h ago"
   }
   
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
-
-  public somaDoisNumeros(num1:number, num2:number): void{
-      //alert(num1 + num2);
+  constructor(
+    public navCtrl: NavController, 
+    public navParams: NavParams,
+    public movieProvider: MovieProvider
+    ) {
   }
 
   ionViewDidLoad() {
-      //this.somaDoisNumeros(10, 99);
+    this.movieProvider.getLatestMovies().subscribe(
+      data => {
+        const response = data as any;
+        const objetoRetorno = JSON.parse(response._body);
+        console.log(new Object(objetoRetorno))
+      },
+      error => {
+        console.log(error)
+      }
+    )
   }
 
 }
