@@ -14,40 +14,41 @@
 
 
 <ion-content padding>
-  <ion-card>
+
+  <ion-card *ngFor="let filme of lista_filmes">
     <ion-item>
       <ion-avatar item-start>
-        <img src="assets/images/avatar.png">
+          <img [src]="'https://image.tmdb.org/t/p/w200' + filme.poster_path">
       </ion-avatar>
-      <h2 class="feed_title">{{ objeto_feed.titulo }}</h2>
-      <p class="feed_date">{{ objeto_feed.data }}</p>
+      <h2 class="feed_title">{{ filme.title }}</h2>
+      <p class="feed_date">{{ filme.original_title }}</p>
     </ion-item>
 
-    <img src="assets/images/feed_image.png">
+    <img [src]="'https://image.tmdb.org/t/p/w400' + filme.backdrop_path">
 
     <ion-card-content>
-      <p>{{ objeto_feed.descricao }}</p>
+      <p>{{ filme.overview }}</p>
     </ion-card-content>
 
     <ion-row>
       <ion-col>
         <button ion-button icon-left clear small>
         <ion-icon name="thumbs-up"></ion-icon>
-        <div>{{ objeto_feed.qtd_likes }}</div>
+        <div>{{ filme.vote_count }}</div>
       </button>
       </ion-col>
       <ion-col>
         <button ion-button icon-left clear small>
-        <ion-icon name="text"></ion-icon>
-        <div>{{ objeto_feed.qtd_comments }}</div>
+        <ion-icon name="analytics"></ion-icon>
+        <div>{{ filme.popularity }}</div>
       </button>
       </ion-col>
       <ion-col center text-center>
         <ion-note>
-          {{ objeto_feed.time_comment }}
+          {{ filme.release_date }}
         </ion-note>
       </ion-col>
     </ion-row>
-
   </ion-card>
+
 </ion-content>
