@@ -21,7 +21,7 @@
           <img [src]="'https://image.tmdb.org/t/p/w200' + filme.poster_path">
       </ion-avatar>
       <h2>{{ filme.title }}</h2>
-      <p class="feed_original_title">{{ filme.original_title }}</p>
+      <p class="feed_original_title">{{ filme.title !== filme.original_title ? filme.original_title : '' }}</p>
     </ion-item>
 
     <img [src]="'https://image.tmdb.org/t/p/w400' + filme.backdrop_path">
