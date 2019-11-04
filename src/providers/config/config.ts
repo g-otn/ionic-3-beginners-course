@@ -15,7 +15,7 @@ export class ConfigProvider {
   }
 
   // Recupera os dados do LocalStorage
-  getConfigData(): object {
+  getConfigData(): any {
     return JSON.parse(localStorage.getItem(configKeyName))
   }
 
