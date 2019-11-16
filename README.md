@@ -8,6 +8,10 @@ This Ionic 3 uses [The Movie Database API](https://www.themoviedb.org/documentat
 
 This is my course project for the "[Ionic 3 para Iniciantes](https://www.udemy.com/course/ionic-3-para-iniciantes)" (Ionic 3 for beginners) Udemy course.
 
+## Download
+
+Android APK: [Direct](https://github.com/g-otn/ionic-3-beginners-course/releases/download/section-12/app-debug.apk) | [Releases](https://github.com/g-otn/ionic-3-beginners-course/releases)
+
 ## Running
 **Requirements**: Node.js and npm
 
