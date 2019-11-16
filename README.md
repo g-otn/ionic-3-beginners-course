@@ -1,27 +1,28 @@
-This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
+# ionic-3-beginners-course
 
-## How to use this template
+This Ionic 3 uses [The Movie Database API](https://www.themoviedb.org/documentation/api) to display recent popular movies in a feed.
 
-*This template does not work on its own*. The shared files for each starter are found in the [ionic2-app-base repo](https://github.com/ionic-team/ionic2-app-base).
+<p align="center">
+    <img height="350" src="https://user-images.githubusercontent.com/44736064/68986462-6113da00-07fe-11ea-8ed5-311778906365.gif">
+</p>
 
-To use this template, either create a new ionic project using the ionic node.js utility, or copy the files from this repository into the [Starter App Base](https://github.com/ionic-team/ionic2-app-base).
+This is my course project for the "[Ionic 3 para Iniciantes](https://www.udemy.com/course/ionic-3-para-iniciantes)" (Ionic 3 for beginners) Udemy course.
 
-### With the Ionic CLI:
+## Running
+**Requirements**: Node.js and npm
 
-Take the name after `ionic2-starter-`, and that is the name of the template to be used when using the `ionic start` command below:
+To simply run the app on your browser follow these steps:
 
+1. Install Ionic CLI
 ```bash
-$ sudo npm install -g ionic cordova
-$ ionic start myTabs tabs
+npm install -g ionic
+```
+2. Navigate to the project's root and start the project:
+```
+ionic serve
 ```
 
-Then, to run it, cd into `myTabs` and run:
+Check out the [Ionic docs](https://ionicframework.com/docs/v1/guide/testing.html) to see how to emulate/run on devices, build APKs, etc.
 
-```bash
-$ ionic cordova platform add ios
-$ ionic cordova run ios
-```
-
-Substitute ios for android if not on a Mac.
-
-# ionic-3-para-iniciantes
+## Acknowledgements
+[leluque](https://github.com/leluque) for assigning me this project's course.
