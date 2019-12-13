@@ -17,11 +17,20 @@ Android APK: [Direct](https://github.com/g-otn/ionic-3-beginners-course/releases
 
 To simply run the app on your browser follow these steps:
 
-1. Install Ionic CLI
+1. Clone the repository:
+```bash
+git clone https://github.com/g-otn/ionic-3-beginners-course
+```
+2. Install Ionic CLI
 ```bash
 npm install -g ionic
 ```
-2. Navigate to the project's root and start the project:
+3. Install the project dependencies (might take a while)
+```bash
+cd ionic-3-beginners-course/
+npm install
+```
+4. Start the project:
 ```
 ionic serve
 ```
